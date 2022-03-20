@@ -1,0 +1,22 @@
+[debug] [2022-03-20T16:57:05.131Z] ----------------------------------------------------------------------
+[debug] [2022-03-20T16:57:05.140Z] Command:       D:\TWITTE~2\my-app\firebase-tools-instant-win.exe C:\Users\User\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase deploy
+[debug] [2022-03-20T16:57:05.141Z] CLI Version:   10.4.0
+[debug] [2022-03-20T16:57:05.142Z] Platform:      win32
+[debug] [2022-03-20T16:57:05.142Z] Node Version:  v12.18.1
+[debug] [2022-03-20T16:57:05.146Z] Time:          Sun Mar 20 2022 23:57:05 GMT+0700 (GMT+07:00)
+[debug] [2022-03-20T16:57:05.147Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-20T16:57:05.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-20T16:57:05.307Z] > authorizing via signed-in user (boatz.b3@gmail.com)
+[debug] [2022-03-20T16:57:05.307Z] [iam] checking project twitter-clone-f0ab1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-20T16:57:05.313Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-f0ab1:testIamPermissions [none]
+[debug] [2022-03-20T16:57:05.313Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-f0ab1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-20T16:57:06.519Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-f0ab1:testIamPermissions 200
+[debug] [2022-03-20T16:57:06.520Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-clone-f0ab1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-20T16:57:06.523Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-f0ab1 [none]
+[debug] [2022-03-20T16:57:27.593Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/twitter-clone-f0ab1
+[debug] [2022-03-20T16:57:30.188Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/twitter-clone-f0ab1
+    at RetryOperation._fn (C:\Users\User\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\apiv2.js:240:31)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project twitter-clone-f0ab1. Please make sure the project exists and your account has permission to access it.
